@@ -28,6 +28,6 @@ app.get("/api/:rapperName", (request, response) => {
 	else response.json(rappers["dylan"]);
 });
 
-app.listen(process.env.port || PORT, () => {
-	console.log(`The server is running on PORT ${PORT}, you better go catch it on PORT`);
+app.listen(process.env.PORT || PORT, () => {
+	console.log(`The server is running on PORT ${PORT}, you better go catch it`);
 });
